@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 
     <main>
-        <input type="button" id="0" value="Rock"></input>
-        <input type="button" id="1" value="Paper"></input>
-        <input type="button" id="2" value="Scissors"></input>
-        <div id="playerChoice"></div>
-        <div id="computerChoice"></div>
-        <div id="result"></div>
+        <div class="buttons">
+            <input type="button" id="0" value="Rock"></input>
+            <input type="button" id="1" value="Paper"></input>
+            <input type="button" id="2" value="Scissors"></input>
+            <button class="playAgain" onclick="refreshPage()">Play again?</button>
+        </div>
+            <div class="results">
+            <div id="playerChoice"></div>
+            <div id="computerChoice"></div>
+            <div id="result">Welcome! Lets play?</div>
+        </div>
     </main>
 
     <script src="script.js"></script>
